@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Free Fire Cup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Hero Section */
+        .hero {
+            background: url('110611437.jpg') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        /* Navbar */
+        .navbar {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white !important;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #f7c200 !important;
+        }
+        /* Registration Box */
+        .register-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .register-box:hover {
+            transform: translateY(-5px);
+        }
+        .register-box h2 {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .register-btn {
+            background: #ffcc00;
+            color: black;
+            font-weight: bold;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .register-btn:hover {
+            background: #e6b800;
+            transform: scale(1.05);
+        }
+        /* Footer */
+        .footer {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar (Fixed Top) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Free Fire Cup</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="leaderboard.html">Leaderboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="fw-bold">Register Your Squad</h1>
+            <p>Only the **IGL (In-Game Leader)** can register their squad. Fill in the correct details!</p>
+        </div>
+    </div>
+
+    <!-- Registration Section -->
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="register-box text-center">
+                    <h2>Squad Registration</h2>
+                    <p class="lead">Ensure your details are correct before submitting.</p>
+                    <p class="fw-bold text-danger">⚠️ Note: Only the **IGL (In-Game Leader)** should register the entire squad!</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSchd3G1nsyvf3VkT6nzC53uaUlaYUDUGkWJlGP-OSlKOC9kjQ/viewform?usp=header" target="_blank" class="btn register-btn">
+                        <i class="fas fa-user-edit"></i> Register Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center py-3">
+        <p>&copy; 2025 Free Fire Cup | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
